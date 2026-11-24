@@ -2,7 +2,7 @@
   "name": "SYS-TECH Servicios Tecnológicos",
   "short_name": "SYS-TECH",
   "lang": "es-MX",
-  "start_url": "/",
+  "start_url": "./",
   "display": "browser",
   "background_color": "#050D24",
   "theme_color": "#050D24",
