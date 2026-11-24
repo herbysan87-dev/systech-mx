@@ -18,7 +18,7 @@
 <meta name="twitter:title" content="SYS-TECH | Servicios profesionales en Huauchinango">
 <meta name="twitter:description" content="Reparación de equipos, cámaras de seguridad, portones automatizados, hogar inteligente y software a la medida.">
 <meta name="twitter:image" content="https://herbysan87-dev.github.io/systech-mx/assets/img/og-systech.jpg">
-<meta property="og:description" content="Reparación de equipos, cámaras de seguridad, portones automatizados, hogar inteligente y software a la medida. Calidad que se nota.">
+<meta property="og:description" content="Reparación de equipos, cámaras de seguridad, portones automatizados, hogar inteligente y software a la medida en Huauchinango, Puebla.">
 <meta property="og:url" content="https://herbysan87-dev.github.io/systech-mx/">
 <meta property="og:image" content="https://herbysan87-dev.github.io/systech-mx/assets/img/og-systech.jpg">
 <meta property="og:image:alt" content="SYS-TECH Servicios Tecnológicos en Huauchinango, Puebla">
@@ -48,7 +48,6 @@
       "@id": "https://herbysan87-dev.github.io/systech-mx/#negocio",
       "name": "SYS-TECH Servicios Tecnológicos",
       "alternateName": "SYS-TECH",
-      "slogan": "Calidad que se nota",
       "description": "Reparación y mantenimiento de celulares, impresoras, computadoras y laptops; instalación de cámaras de seguridad; portones automatizados; hogar inteligente; y apps y software a la medida en Huauchinango, Puebla.",
       "url": "https://herbysan87-dev.github.io/systech-mx/",
       "image": "https://herbysan87-dev.github.io/systech-mx/assets/img/og-systech.jpg",
@@ -372,6 +371,153 @@ html{scroll-padding-bottom:88px}
   .circuit .pulses{display:none}
   .trace-line{transform:none!important}
 }
+/* ===== CONCEPTO C · "Panel dividido" ===== */
+/* Sprite: recortes del logo ORIGINAL (logo-completo.webp, 560x547) */
+.c-mark,.c-word{display:block;background:url(assets/img/logo-completo.webp) no-repeat}
+.c-mark{aspect-ratio:348/346;background-position:48.58% 0;background-size:160.92% 158.09%}
+.c-word{aspect-ratio:325/84;background-position:49.79% 80.13%;background-size:172.31% 651.19%}
+
+/* NAV oscura con "pestaña" clara que nace del borde izquierdo */
+.c-nav{overflow:hidden}
+.c-nav .nav-inner{height:72px;gap:12px}
+.c-brand{position:relative;isolation:isolate;align-self:stretch;display:flex;align-items:center;gap:5px;padding-right:24px;flex:none}
+.c-brand::before,.c-brand::after{content:"";position:absolute;top:0;bottom:0;left:-100vw;clip-path:polygon(0 0,100% 0,calc(100% - 18px) 100%,0 100%)}
+.c-brand::after{z-index:-1;right:0;background:linear-gradient(90deg,#f2f4fc 0%,#f2f4fc 85%,#dfe6f8 100%)}
+.c-brand::before{z-index:-2;right:-4px;background:linear-gradient(180deg,#5B8FF0,#2F70E6)}
+.c-brand .c-mark{height:46px}
+.c-brand .c-word{height:25px}
+@media(min-width:960px){
+  .c-nav .nav-inner{height:76px}
+  .c-brand{gap:8px;padding-right:44px}.c-brand .c-mark{height:58px}.c-brand .c-word{height:33px}
+  .c-brand::before,.c-brand::after{clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%)}
+}
+
+/* HERO dividido: panel claro (logo) + panel oscuro (título) */
+.hero.c-hero{justify-content:flex-start;padding-top:72px}
+@media(min-width:960px){.hero.c-hero{padding-top:76px}}
+.c-split{position:relative;z-index:1;align-self:stretch;display:grid;margin-bottom:clamp(24px,5vw,56px)}
+.c-edge{filter:drop-shadow(0 3px 0 #2F70E6) drop-shadow(0 10px 22px rgba(47,112,230,.45))}
+.c-light{display:grid;place-items:center;padding:20px 20px 40px;background:linear-gradient(180deg,#f2f4fc 0%,#e3e9f9 60%,#c9d4f1 100%);clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),0 100%)}
+.c-logo{width:min(50vw,196px);height:auto;display:block}
+.c-dark{display:grid;justify-items:center;text-align:center;padding:22px var(--gutter) 4px}
+.hero .c-split h1,.c-fb-title{font-family:"Orbitron",var(--font-display);font-weight:400;color:#F4F7FF;font-size:clamp(1.1rem,.5rem + 2.5vw,2.8rem);letter-spacing:.16em;line-height:1.3;margin:0;text-wrap:balance;text-shadow:0 0 24px rgba(47,112,230,.5)}
+.c-line{display:block;width:72px;height:2px;margin:14px auto;background:linear-gradient(90deg,transparent,#5B8FF0,transparent)}
+.c-sub{margin:0;font-family:"Orbitron",var(--font-display);font-weight:400;color:#9FBCF6;font-size:clamp(.72rem,.55rem + .75vw,1.1rem);letter-spacing:.1em;line-height:1.6}
+.c-sub span{white-space:nowrap}
+@media(min-width:860px){
+  .c-split{grid-template-columns:minmax(0,44%) 1fr;min-height:clamp(300px,30vw,380px)}
+  .c-edge{filter:drop-shadow(4px 0 0 #2F70E6) drop-shadow(14px 0 28px rgba(47,112,230,.45))}
+  .c-light{padding:28px 90px 28px var(--gutter);height:100%;background:linear-gradient(90deg,#f2f4fc 0%,#e3e9f9 65%,#c9d4f1 100%);clip-path:polygon(0 0,100% 0,calc(100% - 80px) 100%,0 100%)}
+  .c-logo{width:clamp(200px,17vw,250px)}
+  .c-dark{align-content:center;justify-items:start;text-align:left;padding:28px var(--gutter) 28px clamp(28px,4vw,64px)}
+  .c-line{margin:18px 0;background:linear-gradient(90deg,#5B8FF0,transparent)}
+  .hero .c-split h1{letter-spacing:.22em}.c-sub{letter-spacing:.14em}
+}
+
+/* FOOTER: misma composición dividida, en pequeño */
+footer.c-footer{padding-top:0}
+.c-foot-brand{display:grid;margin-bottom:48px;border-bottom:1px solid var(--line)}
+.c-foot-brand .c-light{padding:22px 20px 36px}
+.c-fb-logo{width:140px;height:auto;display:block}
+.c-foot-brand .c-dark{padding:20px var(--gutter) 30px}
+.c-fb-title{font-size:clamp(.95rem,.7rem + 1vw,1.5rem)}
+.c-fb-tag{margin:14px 0 0;font-size:.9rem;color:var(--text-3)}
+@media(min-width:860px){
+  .c-foot-brand{grid-template-columns:minmax(0,34%) 1fr;min-height:200px}
+  .c-foot-brand .c-light{padding:22px 80px 22px var(--gutter)}
+  .c-fb-logo{width:160px}
+  .c-foot-brand .c-dark{padding:24px var(--gutter) 24px 48px}
+}
+
+
+/* ===== Ajustes C v2: logo más grande, panel más compacto ===== */
+.hero.c-hero{padding-top:72px}
+.c-light{padding:10px 18px 26px}
+.c-logo{width:min(66vw,260px)}
+.c-dark{padding:14px var(--gutter) 2px}
+.hero .c-split h1{font-size:clamp(1.05rem,.55rem + 2.2vw,2.5rem)}
+.c-line{margin:10px auto}
+.c-split{margin-bottom:clamp(18px,4vw,44px)}
+@media(min-width:860px){
+  .c-split{grid-template-columns:minmax(0,40%) 1fr;min-height:0}
+  .c-light{padding:8px 84px 8px var(--gutter);height:100%}
+  .c-logo{width:clamp(230px,20vw,290px)}
+  .c-dark{padding:16px var(--gutter) 16px clamp(28px,4vw,64px)}
+  .c-line{margin:14px 0}
+}
+.c-hero .circuit .node{display:none}
+.c-hero .circuit{opacity:.45}
+.c-split,.c-dark,.c-hero .hero-grid{position:relative;z-index:2}
+/* Pie: mismo criterio */
+.c-foot-brand .c-light{padding:8px 18px 24px}
+.c-fb-logo{width:min(56vw,210px)}
+@media(min-width:860px){
+  .c-foot-brand{grid-template-columns:minmax(0,32%) 1fr;min-height:0}
+  .c-foot-brand .c-light{padding:8px 70px 8px var(--gutter)}
+  .c-fb-logo{width:clamp(180px,15vw,220px)}
+}
+
+/* ===== Ajustes C v3: sin frase de títular, texto principal reacomodado ===== */
+.hero-lead{margin-top:16px;font-size:clamp(1.12rem,1rem + .55vw,1.42rem);line-height:1.55;color:var(--text-1);max-width:56ch}
+.hero-grid{align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:6fr 5fr;gap:64px}.c-hero .photo-card{aspect-ratio:5/4}}
+@media(max-width:959px){.c-hero .photo-card{aspect-ratio:16/10}}
+.c-hero .hero-ctas{margin-top:28px}
+.c-hero .trust{margin-top:26px}
+
+/* ===== Ajustes C v4: tecnología en movimiento ===== */
+/* Botón flotante compacto en celular para no tapar los botones */
+@media(max-width:520px){.wa-float{width:56px;padding:0;justify-content:center}.wa-float .wa-dot{width:34px;height:34px}.wa-float .lbl-short{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+/* Circuito del hero más visible, con nodos que laten */
+.c-hero .circuit{opacity:.7}
+.c-hero .circuit .node{display:block}
+.circuit .node circle{transform-box:fill-box;transform-origin:center;animation:nodeBlink 3.2s ease-in-out infinite}
+.circuit .node circle:nth-child(2n){animation-delay:-1.1s}.circuit .node circle:nth-child(3n){animation-delay:-2.2s}
+@keyframes nodeBlink{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.4)}}
+/* Rejilla tecnológica que se desplaza */
+.tech-grid{position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(91,143,240,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(91,143,240,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 60% 55%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse 80% 70% at 60% 55%,#000 30%,transparent 75%);animation:gridMove 18s linear infinite}
+@keyframes gridMove{to{background-position:56px 56px,56px 56px}}
+/* Partículas de datos ascendentes */
+.particles{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.particles i{position:absolute;bottom:-10px;width:3px;height:3px;border-radius:50%;background:#7AA6FF;box-shadow:0 0 8px 2px rgba(91,143,240,.7);opacity:0;animation:rise2 linear infinite}
+@keyframes rise2{0%{transform:translateY(0);opacity:0}10%{opacity:.9}85%{opacity:.6}100%{transform:translateY(-105vh);opacity:0}}
+/* Línea de energía bajo "SERVICIOS TECNOLÓGICOS" */
+.c-line{position:relative;overflow:hidden;width:120px}
+.c-line::after{content:"";position:absolute;top:-1px;left:-40%;width:40%;height:4px;background:linear-gradient(90deg,transparent,#fff,transparent);filter:blur(1px);animation:sweep 2.8s ease-in-out infinite}
+@keyframes sweep{to{left:110%}}
+/* Brillo que recorre el panel del logo */
+.c-light{position:relative;overflow:hidden}
+.c-light::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg);animation:shine 7s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%,62%{left:-60%}100%{left:130%}}
+/* Foto con interfaz de escaneo */
+.photo-card .scan{position:absolute;left:0;right:0;height:38%;top:-40%;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(91,143,240,.18) 80%,rgba(160,196,255,.9) 100%);border-bottom:1px solid rgba(190,215,255,.9);box-shadow:0 6px 18px rgba(91,143,240,.55);animation:scanY 4.5s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes scanY{0%{top:-40%}100%{top:105%}}
+.photo-card .hud{position:absolute;inset:14px;z-index:3;pointer-events:none}
+.photo-card .hud b{position:absolute;width:26px;height:26px;border:2px solid rgba(160,196,255,.95);filter:drop-shadow(0 0 4px #2F70E6)}
+.photo-card .hud b:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}
+.photo-card .hud b:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.photo-card .hud b:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}
+.photo-card .hud b:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+.photo-card .hud span{position:absolute;top:6px;left:38px;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.16em;color:#CFE0FF;background:rgba(5,13,36,.6);padding:3px 8px;border-radius:4px;display:inline-flex;align-items:center;gap:7px}
+.photo-card .hud span::before{content:"";width:7px;height:7px;border-radius:50%;background:#3BE38A;box-shadow:0 0 8px #3BE38A;animation:blink 1.4s steps(2,start) infinite}
+@keyframes blink{to{visibility:hidden}}
+/* Tarjetas de servicio: borde de energía giratorio */
+@property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
+.svc::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:conic-gradient(from var(--ang),transparent 0 70%,#5B8FF0 82%,#BFD6FF 88%,transparent 96%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spinAng 6s linear infinite;pointer-events:none;z-index:3}
+.svc:nth-child(2)::before{animation-delay:-1.2s}.svc:nth-child(3)::before{animation-delay:-2.4s}.svc:nth-child(4)::before{animation-delay:-3.6s}.svc:nth-child(5)::before{animation-delay:-4.8s}
+@keyframes spinAng{to{--ang:360deg}}
+/* Cursor de terminal en los encabezados de sección */
+.section-head .eyebrow::after{content:"_";color:var(--blue-400);animation:blink 1s steps(2,start) infinite}
+/* Marcas con destello */
+.brands .names{background:linear-gradient(90deg,var(--text-1) 0 40%,#fff 50%,var(--text-1) 60% 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:textShine 5s linear infinite}
+.brands .names i{-webkit-text-fill-color:initial;animation:nodeBlink 2.4s ease-in-out infinite}
+@keyframes textShine{from{background-position:100% 0}to{background-position:-150% 0}}
+@media(prefers-reduced-motion:reduce){.tech-grid,.particles,.photo-card .scan,.c-light::after,.c-line::after,.svc::before{animation:none!important;display:none}.circuit .node circle,.brands .names,.brands .names i{animation:none!important}}
+
+/* ===== Ajustes C v5: pestaña del logo sin blanco, tono azul del encabezado original ===== */
+.c-brand::after{background:linear-gradient(90deg,#9fb3e6 0%,#b5c3eb 55%,#8ea4df 100%);box-shadow:inset 0 -1px 0 rgba(255,255,255,.35)}
+.c-brand::before{background:linear-gradient(180deg,#7AA6FF,#2F70E6);filter:drop-shadow(0 0 10px rgba(91,143,240,.85))}
+.c-brand .c-mark,.c-brand .c-word{filter:drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 6px rgba(255,255,255,.55))}
 </style>
 </head>
 <body>
@@ -395,12 +541,9 @@ html{scroll-padding-bottom:88px}
   </defs>
 </svg>
 
-<header class="nav" id="nav">
+<header class="nav c-nav" id="nav">
   <div class="container nav-inner">
-    <a class="brand" href="#inicio" aria-label="SYS-TECH Servicios Tecnológicos, inicio">
-      <img src="assets/img/logo-160.webp" alt="" width="54" height="54">
-      <span class="brand-name">SYS-TECH<small>Servicios Tecnológicos</small></span>
-    </a>
+    <a class="brand c-brand" href="#inicio" aria-label="SYS-TECH Servicios Tecnológicos, inicio"><span class="c-mark" aria-hidden="true"></span><span class="c-word" aria-hidden="true"></span></a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#servicios">Servicios</a>
       <a href="#por-que">Por qué nosotros</a>
@@ -413,7 +556,9 @@ html{scroll-padding-bottom:88px}
 </header>
 
 <main id="contenido" tabindex="-1">
-<section class="hero" id="inicio">
+<section class="hero c-hero" id="inicio">
+  <div class="tech-grid" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true"><i style="left:43%;animation-duration:16.6s;animation-delay:-6.3s"></i><i style="left:8%;animation-duration:9.6s;animation-delay:-8.6s"></i><i style="left:48%;animation-duration:13.7s;animation-delay:-14.6s"></i><i style="left:29%;animation-duration:9.3s;animation-delay:-6.9s"></i><i style="left:10%;animation-duration:10.9s;animation-delay:-8.8s"></i><i style="left:9%;animation-duration:15.6s;animation-delay:-2.0s"></i><i style="left:30%;animation-duration:14.0s;animation-delay:-9.3s"></i><i style="left:9%;animation-duration:13.6s;animation-delay:-6.3s"></i><i style="left:30%;animation-duration:9.4s;animation-delay:-13.7s"></i><i style="left:39%;animation-duration:12.4s;animation-delay:-8.7s"></i><i style="left:75%;animation-duration:11.5s;animation-delay:-13.1s"></i><i style="left:25%;animation-duration:9.8s;animation-delay:-9.1s"></i><i style="left:26%;animation-duration:12.0s;animation-delay:-8.8s"></i><i style="left:10%;animation-duration:13.5s;animation-delay:-9.9s"></i><i style="left:65%;animation-duration:14.4s;animation-delay:-6.8s"></i><i style="left:42%;animation-duration:12.7s;animation-delay:-14.8s"></i><i style="left:48%;animation-duration:11.4s;animation-delay:-12.7s"></i><i style="left:91%;animation-duration:15.2s;animation-delay:-1.3s"></i></div>
   <svg class="circuit" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <path class="base" d="M-20 180H260l60 60h240l40-40h320"/>
     <path class="base" d="M1460 120H1180l-60 60H900l-40 40H700"/>
@@ -430,22 +575,19 @@ html{scroll-padding-bottom:88px}
       <path class="pulse" style="animation-delay:-4s" d="M-20 640H180l80-80h300l60 60h220"/>
       <path class="pulse" style="animation-delay:-1s;animation-duration:5.5s" d="M1460 560H1240l-60 60h-200l-50 50H760"/>
       <path class="pulse" style="animation-delay:-3s;animation-duration:6.5s" d="M1060 -20V80l60 60v120l-40 40v160"/>
+      <path class="pulse" style="animation-delay:-5s;animation-duration:7.5s" d="M1460 820H1100l-40-40H820l-60 60H520"/>
+      <path class="pulse" style="animation-delay:-2.5s;animation-duration:5s" d="M-20 860H340l40-40h200"/>
+      <path class="pulse" style="animation-delay:-1.5s;animation-duration:4.5s" d="M380 -20v90l-50 50v130"/>
     </g>
   </svg>
-  <div class="container" style="position:relative">
-    <div class="brand-banner reveal">
-      <img class="bb-logo" src="assets/img/logo-completo.webp" alt="SYS-TECH Servicios Tecnológicos" width="560" height="547" fetchpriority="high">
-      <div>
-        <h1>SERVICIOS TECNOLÓGICOS<span class="sr-only"> SYS-TECH en Huauchinango, Puebla</span></h1>
-        <p class="bb-sub">COMUNICACIONES - SEGURIDAD - SISTEMAS</p>
-      </div>
-    </div>
+  <div class="c-split reveal">
+    <div class="c-edge"><div class="c-light"><img class="c-logo" src="assets/img/logo-completo.webp" alt="SYS-TECH Servicios Tecnológicos" width="560" height="547" fetchpriority="high"></div></div>
+    <div class="c-dark"><h1>SERVICIOS TECNOLÓGICOS<span class="sr-only"> SYS-TECH en Huauchinango, Puebla</span></h1><span class="c-line" aria-hidden="true"></span><p class="c-sub"><span>COMUNICACIONES -</span> <span>SEGURIDAD - SISTEMAS</span></p></div>
   </div>
   <div class="container hero-grid">
     <div>
       <span class="eyebrow reveal">Huauchinango, Puebla</span>
-      <p class="hero-claim reveal" style="--i:1">Soluciones tecnológicas integrales <span class="grad-text">con calidad que se nota.</span></p>
-      <p class="lead reveal" style="--i:2">Reparación y mantenimiento de equipos de cómputo, impresoras y celulares; instalación de sistemas de videovigilancia, automatización de accesos y domótica; y desarrollo de software a la medida. Cada proyecto se ejecuta con componentes de primera calidad y estándares profesionales de instalación.</p>
+      <p class="lead hero-lead reveal" style="--i:1">Reparación y mantenimiento de equipos de cómputo, impresoras y celulares; instalación de sistemas de videovigilancia, automatización de accesos y domótica; y desarrollo de software a la medida. Cada proyecto se ejecuta con componentes de primera calidad y estándares profesionales de instalación.</p>
       <div class="hero-ctas reveal" style="--i:3">
         <a class="btn btn-primary wa" data-msg="Hola, SYS-TECH. Me gustaría solicitar una cotización sin costo. Me interesa: " href="https://wa.me/527761128090"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Solicitar cotización</a>
         <a class="btn btn-ghost wa" data-msg="REPARAR. Hola, SYS-TECH. Les envío la foto de mi equipo para solicitar un presupuesto." href="https://wa.me/527761128090"><svg aria-hidden="true" focusable="false"><use href="#i-wrench"/></svg>Reparar mi equipo</a>
@@ -460,6 +602,7 @@ html{scroll-padding-bottom:88px}
     <div class="hero-visual reveal" style="--i:2">
       <div class="photo-card">
         <img src="assets/img/reparacion-laptop.webp" alt="Técnico abriendo una laptop con desarmador para darle mantenimiento" width="900" height="1200" fetchpriority="high">
+        <span class="scan" aria-hidden="true"></span><span class="hud" aria-hidden="true"><b></b><b></b><b></b><b></b><span>DIAGNÓSTICO</span></span>
       </div>
       <div class="chip"><span class="dot" aria-hidden="true"></span><div>Atendemos por WhatsApp<small>Lunes a sábado · 10:00 a. m. – 6:00 p. m.</small></div></div>
     </div>
@@ -543,7 +686,7 @@ html{scroll-padding-bottom:88px}
       <h2 style="margin-top:14px">Lo barato sale caro</h2>
       <p style="margin-top:18px;font-size:var(--fs-lead);color:var(--text-1)">No somos la opción más económica. Ejecutamos el trabajo correctamente para que no pagues dos veces.</p>
       <p>Un cableado deficiente, materiales de baja calidad o una instalación apresurada suelen terminar igual: fallan, se repiten y cuestan más. En SYS-TECH trabajamos con rigor técnico en cada proyecto.</p>
-      <p class="quote"><span class="grad-text">Calidad que se nota.</span> Y se refleja en soluciones que no necesitan repetirse.</p>
+      <p class="quote"><span class="grad-text">Un trabajo bien ejecutado</span> no necesita repetirse.</p>
       <a class="btn btn-primary wa" data-msg="Hola, SYS-TECH. Me gustaría recibir asesoría para elegir la solución que necesito." href="https://wa.me/527761128090"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Contactar a SYS-TECH</a>
     </div>
     <div class="compare reveal" style="--i:1" role="table" aria-label="Comparación entre lo barato y SYS-TECH">
@@ -651,7 +794,6 @@ html{scroll-padding-bottom:88px}
     </g>
   </svg>
   <div class="container" style="position:relative">
-    <img class="mark-logo reveal" src="assets/img/logo-completo-oscuro.webp" alt="SYS-TECH Servicios Tecnológicos" width="560" height="547" loading="lazy">
     <h2 class="reveal" style="--i:1">Hablemos de tu proyecto</h2>
     <p class="reveal" style="--i:2">Cuéntanos qué necesitas. Te asesoramos con transparencia y cotizamos sin costo tu instalación.</p>
     <div class="ctas reveal" style="--i:3">
@@ -663,13 +805,13 @@ html{scroll-padding-bottom:88px}
 </section>
 </main>
 
-<footer>
+<footer class="c-footer">
+  <div class="c-foot-brand">
+    <div class="c-edge"><a class="c-light" href="#inicio" aria-label="SYS-TECH Servicios Tecnológicos, inicio"><img class="c-fb-logo" src="assets/img/logo-completo.webp" alt="" width="560" height="547" loading="lazy"></a></div>
+    <div class="c-dark"><p class="c-fb-title">SERVICIOS TECNOLÓGICOS</p><span class="c-line" aria-hidden="true"></span><p class="c-sub"><span>COMUNICACIONES -</span> <span>SEGURIDAD - SISTEMAS</span></p><p class="c-fb-tag">Huauchinango, Puebla y alrededores</p></div>
+  </div>
   <div class="container">
     <div class="foot">
-      <div>
-        <a class="brand" href="#inicio"><img src="assets/img/logo-160.webp" alt="" width="54" height="54" loading="lazy"><span class="brand-name">SYS-TECH<small>Servicios Tecnológicos</small></span></a>
-        <p class="tag">Calidad que se nota.<br>Huauchinango, Puebla y alrededores</p>
-      </div>
       <div>
         <h3>Servicios</h3>
         <ul>
