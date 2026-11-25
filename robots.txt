@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://herbysan87-dev.github.io/systech-mx/sitemap.xml
+Sitemap: https://systech-mx.github.io/sitemap.xml
